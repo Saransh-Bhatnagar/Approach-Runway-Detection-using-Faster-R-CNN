@@ -45,7 +45,7 @@ The core of this work is not just the model's performance, but the **deep-dive e
 
 ## 🚀 Usage
 
-The primary analyses are conducted within Jupyter notebooks.
+The primary analyses are conducted within Colab notebooks.
 
 1.  **Data Preparation:** Ensure the LARD dataset is downloaded and structured as expected. Pre-trained model weights and pre-processed data files should be placed in the appropriate directories.
 2.  **Evaluation & Analysis:** Open and run the `main_analysis.ipynb` notebook. This notebook loads the model predictions and ground truth data, runs the evaluation functions, and generates all the key plots and tables presented in the final report.
