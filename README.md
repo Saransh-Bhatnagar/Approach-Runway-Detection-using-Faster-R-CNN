@@ -2,8 +2,8 @@
 
 This repository contains the official code and analysis for the Master of Engineering project, "Approach Runway Detection from Images," completed in collaboration with Collins Aerospace at the University of Limerick. The project focuses on developing and rigorously evaluating a deep learning model to detect airport runways from aerial imagery captured during the final approach phase of flight.
 
-![Model Demonstration](https://i.imgur.com/your-image-url.png)
-*(**Action:** You should replace the URL above with a link to Figure 4 from your report. You can upload the image to your GitHub repo and link to it directly).*
+<img width="1063" height="349" alt="image" src="https://github.com/user-attachments/assets/f60bbe3d-94f1-4a08-af52-c316eebf6438" />
+
 
 ## 📖 Project Overview
 
