@@ -1,14 +1,16 @@
 # Core ML & Compute
-torch
-torchvision
-torchmetrics
-numpy
+torch==2.8.0
+torchvision==0.23.0
+torchmetrics==1.8.2
+numpy==2.0.2
 
 # Data Handling & Plotting
-pandas
-matplotlib
-seaborn
+pandas==2.2.2
+matplotlib==3.10.0
+seaborn==0.13.2
 
-# Image Processing
-opencv-python
-albumentations
+# Image Processing & Utils
+opencv-python==4.12.0.88
+Pillow==11.3.0
+albumentations==2.0.8
+tqdm==4.67.1
