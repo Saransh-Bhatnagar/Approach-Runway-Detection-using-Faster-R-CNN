@@ -88,7 +88,7 @@ This repository contains two primary notebooks. The large data files (including 
 
 * **`analysis.ipynb`**: **This is the main analysis notebook.** It loads the pre-computed outputs (the `.pkl` files) and the detection flag CSVs from the `data_tlbr` directory to reproduce all the plots, tables, and findings presented in the final project report. **No model inference is run in this notebook.**
 
-To explore the project's findings, simply run the `analysis.ipynb` notebook using Jupyter.
+To explore the project's findings, simply run the `analysis.ipynb` notebook using Colab or Jupyter.
 
 ## 📊 Results
 
