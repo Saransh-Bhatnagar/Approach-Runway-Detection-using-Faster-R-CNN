@@ -33,22 +33,62 @@ The core of this work is not just the model's performance, but the **deep-dive e
 
 ## ⚙️ Installation
 
-1.  Clone the repository:
+1.  **Clone the Repository:**
     ```bash
     git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     cd your-repo-name
     ```
-2.  Install the required packages:
+2.  **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
+    ```
+3.  **Download the Data, Model & Outputs:**
+    The processed LARD dataset (`data_tlbr`), pre-computed model predictions (`.pkl` files), detection flag CSVs, and the final trained model (`.pth`) are all hosted on Google Drive due to their size.
+
+    **[Download data_tlbr_and_outputs.zip from Google Drive](https://drive.google.com/drive/folders/1G_-7UdyhBp873q__hcNcUtbZINk2cE6R?usp=drive_link)**
+
+4.  **Set Up Directory Structure:**
+    Unzip the downloaded file and place its contents so that your project directory looks like this. The `analysis.ipynb` notebook expects this specific structure to find the images, labels, and prediction files.
+
+    ```
+    your-repo-name/
+    ├── analysis.ipynb
+    ├── model_training.ipynb
+    ├── README.md
+    ├── requirements.txt
+    └── data_tlbr/
+        ├── Test_RealEdge/
+        │   ├── images/
+        │   └── labels/
+        ├── Test_RealNominal/
+        │   ├── images/
+        │   └── labels/
+        ├── Test_Synth/
+        │   ├── images/
+        │   └── labels/
+        ├── train/
+        │   ├── images/
+        │   └── labels/
+        ├── final_model.pth
+        ├── real_edge_detections.csv
+        ├── real_nominal_detections.csv
+        ├── synthetic_detections.csv
+        ├── test_outputs_real_edge.pkl
+        ├── test_outputs_real_nominal.pkl
+        └── test_outputs_synthetic.pkl
     ```
 
 ## 🚀 Usage
 
-The primary analyses are conducted within Colab notebooks.
+This repository contains two primary notebooks. The large data files (including the model) are in the Google Drive download.
 
-1.  **Data Preparation:** Ensure the LARD dataset is downloaded and structured as expected. Pre-trained model weights and pre-processed data files should be placed in the appropriate directories.
-2.  **Evaluation & Analysis:** Open and run the `main_analysis.ipynb` notebook. This notebook loads the model predictions and ground truth data, runs the evaluation functions, and generates all the key plots and tables presented in the final report.
+* **`model_training.ipynb`**: This notebook (in the GitHub repo) contains the complete code used to train the Faster R-CNN model from scratch. Its final output is the `final_model.pth` file.
+
+* **`final_model.pth`**: This is the pre-trained model artifact, located in the `data_tlbr` folder (from Google Drive). It is provided for reference or for anyone who wishes to run new inferences, but it is **not** directly used by the analysis notebook.
+
+* **`analysis.ipynb`**: **This is the main analysis notebook.** It loads the pre-computed outputs (the `.pkl` files) and the detection flag CSVs from the `data_tlbr` directory to reproduce all the plots, tables, and findings presented in the final project report. **No model inference is run in this notebook.**
+
+To explore the project's findings, simply run the `analysis.ipynb` notebook using Jupyter.
 
 ## 📊 Results
 
