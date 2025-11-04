@@ -1,0 +1,14 @@
+# Core ML & Compute
+torch
+torchvision
+torchmetrics
+numpy
+
+# Data Handling & Plotting
+pandas
+matplotlib
+seaborn
+
+# Image Processing
+opencv-python
+albumentations
